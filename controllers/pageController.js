@@ -218,11 +218,6 @@ const sendMail = async (req,res) => {
 
 
 
-
-
-
-
-
 // obje çıkarımı
 export {
 
@@ -233,6 +228,7 @@ export {
      getLogout,
      getContactPage,
      sendMail,
+     
 
     };
 

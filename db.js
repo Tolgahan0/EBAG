@@ -13,4 +13,4 @@ const conn =() => {
     });
 };
 
-export default conn
+export default conn ;

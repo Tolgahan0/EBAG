@@ -81,6 +81,7 @@ const getAPhoto = async (req,res) => {
     }
 }
 
+
 const deletePhoto = async (req,res) => {
     try {
        const photo = await Photo.findById(req.params.id);
@@ -147,4 +148,4 @@ const updatePhoto = async (req,res) => {
 
 
 
-export {createPhoto, getAllPhotos, getAPhoto,deletePhoto,updatePhoto};
+export {createPhoto, getAllPhotos, getAPhoto,deletePhoto,updatePhoto,};

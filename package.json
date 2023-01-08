@@ -14,6 +14,7 @@
   "author": "Tolgahan Ayaz",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "bcrypt": "^5.1.0",
     "cloudinary": "^1.32.0",
     "cookie-parser": "^1.4.6",
@@ -21,10 +22,13 @@
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "method-override": "^3.0.0",
     "mongoose": "^6.7.2",
     "nodemailer": "^6.8.0",
+    "react": "^18.2.0",
+    "react-avatar-edit": "^1.2.0",
+    "react-dom": "^18.2.0",
     "smtp": "^0.1.4",
     "validator": "^13.7.0"
   },

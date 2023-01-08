@@ -26,6 +26,14 @@
                 <a class="read_more" href="/users/<%= photo.user._id %>">
                  Artist : <%= photo.user.username %>
                 </a>
+                <br>
+                
+                <a class="read_more" href="" ction="../payment.js" method="POST">
+                  Go To Pay 
+                 </a>
+
+                
+     
 
                 <% if (isOwner) { %>
                 <div style="margin-top: 30px ;">
@@ -54,6 +62,39 @@
           </div>
         </div>
       </div>
+
+       <!-- comment -->
+       <div class="contact">
+        <div class="comment1">
+          <div class="row">
+            <div class="col-md-12 ">
+              <div class="titlepage text_align_center">
+                <h2>Comments Area</h2>
+              </div>
+            </div>
+            <div class="col-md-8 offset-md-2">
+              <form id="request" class="main_form" action="/photo" method="POST" >
+
+                <div class="col-md-12">
+                  <div style="display:none ;" class="alert alert-success" id="sendMessage"  ></div>
+                </div>
+                <div class="row">    
+                  <div class="col-md-12">
+                    <input class="form_cont" placeholder="Message" type="type" name="message">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="group_form">
+                      <button class="send_btn">Comment</button>
+                     
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end comment -->
       <!-- end about -->
       <!-- end footer -->
       <div id="updateModel" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -106,5 +147,5 @@
     </div>
 
 
-
+    
       <%- include("partials/_footer.ejs")%>

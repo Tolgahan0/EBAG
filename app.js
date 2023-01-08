@@ -11,8 +11,6 @@ import { checkUser } from './middlewares/authMiddleware.js';
 import fileUpload from 'express-fileupload';
 import { v2 as cloudinary } from 'cloudinary';
 
-
-
 dotenv.config();
 
 cloudinary.config({
@@ -59,6 +57,9 @@ app.use("*", checkUser);
 app.use('/',pageRoute);
 app.use('/photos',photoRoute);
 app.use('/users',userRoute);
+
+
+
 
 
 

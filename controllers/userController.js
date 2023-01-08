@@ -214,9 +214,6 @@ const unfollow = async (req,res) => {
 
 
 
-
-
-
 export {
      createUser , 
      loginUser , 
@@ -225,5 +222,6 @@ export {
      getAUser,
      follow,
      unfollow,
+     
      
     };
